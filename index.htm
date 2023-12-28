@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora en JS Vanilla</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="script" href="javascript.js">
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <h1>Calculadora por YerePF</h1>
+
+            <div class="cajaCalculadora">
+                
+                <div class="inputs">
+                    <!-- Input del numero uno que servira para la suma -->
+                    <input type="number" id="num1">
+                    <!-- Input del numero dos que servira para la suma -->
+                    <input type="number" id="num2">
+                </div>
+                
+                
+                <div class="operations">            
+                    <button onclick="sumar()">+</button>
+                    <button onclick="restar()">-</button>
+                    <button onclick="dividir()">/</button>
+                    <button onclick="multiplicar()">X</button>
+                </div>
+    
+                <!-- p para poner un texto de resultado y un span que muestra el valor del id resultado-->
+                <p>Resultado: <b> <span id="resultado"></span></b></p>
+
+            </div>
+            
+        </div>
+        <script src="script.js"> </script>
+    </body>
+</html>
